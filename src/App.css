@@ -6,7 +6,8 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white; /* Änderung von der transparenten weißen Farbe zu vollständig weiß */
+  color: white;
+  padding: 15px; /* Hinzugefügt, um Abstand zu den Rändern zu schaffen */
 }
 
 .button-custom {
@@ -20,6 +21,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+  width: 100%; /* Auf 100% Breite auf kleinen Bildschirmen */
 }
 
 .button-custom:hover {
@@ -29,10 +31,22 @@
 
 ul {
   list-style: none;
+  padding: 0; /* Entfernt das Padding, das von MUI-Liste hinzugefügt wird */
 }
 
 li.custom-list-item {
   font-size: 1.2rem;
   margin: 5px 0;
   color: red;
+  width: 100%; /* Auf 100% Breite auf kleinen Bildschirmen */
 }
+
+@media screen and (min-width: 768px) {
+  .button-custom {
+    width: auto; /* Zurück zur automatischen Breite auf größeren Bildschirmen */
+  }
+  li.custom-list-item {
+    width: auto; /* Zurück zur automatischen Breite auf größeren Bildschirmen */
+  }
+}
+
