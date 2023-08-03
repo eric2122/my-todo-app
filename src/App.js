@@ -8,11 +8,49 @@ function TodoApp() {
   const [task, setTask] = useState("");
   const [backgroundIndex, setBackgroundIndex] = useState(0);
 
-  const catImages = [
-    'https://placekitten.com/1920/1080',
-    'https://placekitten.com/1921/1081',
-    'https://placekitten.com/1922/1082',
-    // ... restlichen Bilder
+ const catImages = [
+    'https://placekitten.com/1923/1083',
+    'https://placekitten.com/1924/1084',
+    'https://placekitten.com/1925/1085',
+    'https://placekitten.com/1926/1086',
+    'https://placekitten.com/1927/1087',
+    'https://placekitten.com/1928/1088',
+    'https://placekitten.com/1929/1089',
+    'https://placekitten.com/1930/1090',
+    'https://placekitten.com/1931/1091',
+    'https://placekitten.com/1932/1092',
+    'https://placekitten.com/1933/1093',
+    'https://placekitten.com/1934/1094',
+    'https://placekitten.com/1935/1095',
+    'https://placekitten.com/1936/1096',
+    'https://placekitten.com/1937/1097',
+    'https://placekitten.com/1938/1098',
+    'https://placekitten.com/1939/1099',
+    'https://placekitten.com/1940/1100',
+    'https://placekitten.com/1941/1101',
+    'https://placekitten.com/1942/1102',
+    'https://placekitten.com/1943/1103',
+    'https://placekitten.com/1943/1103',
+    'https://placekitten.com/1944/1104',
+    'https://placekitten.com/1945/1105',
+    'https://placekitten.com/1946/1106',
+    'https://placekitten.com/1947/1107',
+    'https://placekitten.com/1948/1108',
+    'https://placekitten.com/1949/1109',
+    'https://placekitten.com/1950/1110',
+    'https://placekitten.com/1951/1111',
+    'https://placekitten.com/1952/1112',
+    'https://placekitten.com/1953/1113',
+    'https://placekitten.com/1954/1114',
+    'https://placekitten.com/1955/1115',
+    'https://placekitten.com/1956/1116',
+    'https://placekitten.com/1957/1117',
+    'https://placekitten.com/1958/1118',
+    'https://placekitten.com/1959/1119',
+    'https://placekitten.com/1960/1120',
+    'https://placekitten.com/1961/1121',
+    'https://placekitten.com/1962/1122'
+    
   ];
 
   useEffect(() => {
