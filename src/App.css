@@ -1,13 +1,16 @@
 .App-header {
-  background-size: cover;
+  background-size: cover; /* Änderung, um das gesamte Bild zu sehen */
+  background-repeat: no-repeat; /* Verhindert das Wiederholen des Bildes */
+  background-position: center; /* Zentriert das Bild im Container */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; /* Zentriert die Elemente vertikal */
   font-size: calc(10px + 2vmin);
-  color: white;
-  padding: 15px; /* Hinzugefügt, um Abstand zu den Rändern zu schaffen */
+  color: white; /* Änderung von der transparenten weißen Farbe zu vollständig weiß */
+  padding-left: 5%; /* Verschiebt die Elemente nach links */
+  margin-bottom: 10%; /* Verschiebt die Elemente ein bisschen höher */
 }
 
 .button-custom {
@@ -21,7 +24,6 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
-  width: 100%; /* Auf 100% Breite auf kleinen Bildschirmen */
 }
 
 .button-custom:hover {
@@ -31,22 +33,11 @@
 
 ul {
   list-style: none;
-  padding: 0; /* Entfernt das Padding, das von MUI-Liste hinzugefügt wird */
 }
 
 li.custom-list-item {
   font-size: 1.2rem;
   margin: 5px 0;
   color: red;
-  width: 100%; /* Auf 100% Breite auf kleinen Bildschirmen */
-}
-
-@media screen and (min-width: 768px) {
-  .button-custom {
-    width: auto; /* Zurück zur automatischen Breite auf größeren Bildschirmen */
-  }
-  li.custom-list-item {
-    width: auto; /* Zurück zur automatischen Breite auf größeren Bildschirmen */
-  }
 }
 
